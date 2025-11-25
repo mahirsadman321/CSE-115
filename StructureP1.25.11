@@ -1,0 +1,38 @@
+#include<stdio.h>
+#include<string.h>
+
+struct Player
+    {
+        char name[100];
+        int age;
+        int scores[5];
+        float rating;
+
+    };
+
+int main(void)
+{
+    struct Player p1;
+    strcpy(p1.name,"Anas");
+    p1.age=25;
+    p1.rating=5.0;
+
+    printf("Player 1:\n");
+    printf("Name: %s\n", p1.name);
+    printf("Age: %d\n", p1.age);
+    printf("Rating: %.3f\n", p1.rating);
+
+    printf("\n");
+
+    struct Player p2;
+    strcpy(p2.name,"Mahir");
+    p2.age=21;
+    p2.rating=4.5;
+
+    printf("Player 2:\n");
+    printf("Name: %s\n", p2.name);
+    printf("Age: %d\n", p2.age);
+    printf("Rating: %.3f\n", p2.rating);
+
+    return 0;
+}
