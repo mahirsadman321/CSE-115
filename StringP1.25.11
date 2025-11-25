@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<string.h>
+
+int main(void)
+{
+    char str1[] = {'I',' ','l','o','v','e','\0'};
+    char str2[] = " Bangladesh";
+
+    int str1_len = strlen(str1);
+    int str2_len = strlen(str2);
+
+    printf("Size of str1: %d\n", str1_len);
+    printf("Size of str2: %d\n", str2_len);
+
+    int cmp_result = strcmp(str1,str2);
+    printf("\ncmp_result: %d\n", cmp_result);
+
+    strcat(str1,str2);
+    printf("\nstr1: %s\n", str1);
+
+    return 0;
+}
